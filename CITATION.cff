@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite it as below."
+title: "constraint-gap-lean: a Lean 4 formalization of the projection gap for realizable adversarial perturbations"
+type: software
+authors:
+  - family-names: Bond
+    given-names: Andrew H.
+    email: andrew.bond@sjsu.edu
+    affiliation: San Jose State University
+    orcid: "https://orcid.org/0009-0003-2599-6158"
+license: MIT
+repository-code: "https://github.com/ahb-sjsu/constraint-gap-lean"
+keywords:
+  - Lean 4
+  - mathlib
+  - adversarial robustness
+  - orthogonal projection
+  - WiFi CSI sensing
