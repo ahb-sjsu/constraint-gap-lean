@@ -60,3 +60,22 @@ repository rather than in your setup — please open an issue.
 
 Start at Theorem 6; it is short and the reframing rests on it. Then
 `inner_g_proj`, which is what everything else is built from.
+
+## The companion measurement suite
+
+The measurements this algebra is checked against live in Egemen B.
+Tuncarslan's repository, `egeboy35/constraint-gap-measurements` (private).
+That is where the CSI datasets, the attack tools and the `cos theta`
+experiments are; this repository holds only the formalization.
+
+The two are archived to Zenodo separately at submission, with version DOIs, so
+each is citable at the state the reported numbers came from.
+
+Worth recording here, because it bears on Theorems 1 and 6: the applied
+projection in the measurement suite is built by `tangent_basis`, which
+orthonormalises the Jacobian's columns. It was verified orthogonal in Sep 2026
+— idempotency `4.7e-16`, self-adjointness `1.2e-15`, principal cosines with
+`col(J)` at 1.000000 — so the hypothesis these theorems need is satisfied by
+what actually runs. The larger idempotency residual quoted earlier in
+correspondence (`1.14`) belongs to the raw Jacobian, which is not the operator
+applied.
