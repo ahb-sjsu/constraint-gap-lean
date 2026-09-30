@@ -56,6 +56,18 @@ lake build
 If it does not build against mathlib `v4.32.2`, that is a bug in this
 repository rather than in your setup — please open an issue.
 
+`lake-manifest.json` pins every dependency to the revisions of the checked
+build (mathlib `905b95818eb3`, tag `v4.32.2`). To confirm that nothing rests
+on `sorry` or an added axiom:
+
+```bash
+lake env lean Axioms.lean
+```
+
+Each of the seven theorems should report only `propext`, `Classical.choice`
+and `Quot.sound`, the standard axioms mathlib itself uses. Checked
+2026-09-30 for v1.0.0, the version the WCNC 2027 manuscript cites.
+
 ## Reading order
 
 Start at Theorem 6; it is short and the reframing rests on it. Then

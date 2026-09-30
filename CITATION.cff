@@ -16,3 +16,4 @@ keywords:
   - adversarial robustness
   - orthogonal projection
   - WiFi CSI sensing
+version: "1.0.0"
