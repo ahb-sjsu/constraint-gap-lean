@@ -1,5 +1,7 @@
 # constraint-gap-lean
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23902307.svg)](https://doi.org/10.5281/zenodo.23902307)
+
 A machine check of the constraint-gap algebra in Egemen Tuncarslan's
 Proposal A, Section 3 (adversarial attacks on WiFi CSI sensing under a
 realizable-perturbation constraint).
@@ -73,6 +75,15 @@ and `Quot.sound`, the standard axioms mathlib itself uses. Checked
 Start at Theorem 6; it is short and the reframing rests on it. Then
 `inner_g_proj`, which is what everything else is built from.
 
+## Citing
+
+v1.0.0, the version the WCNC 2027 manuscript cites, is archived on Zenodo as
+[10.5281/zenodo.23902307](https://doi.org/10.5281/zenodo.23902307), the tagged
+tree byte for byte. Later commits to this repository do not change that
+archive. The concept DOI
+[10.5281/zenodo.23902306](https://doi.org/10.5281/zenodo.23902306) always
+resolves to the latest version. `CITATION.cff` carries both.
+
 ## The companion measurement suite
 
 The measurements this algebra is checked against live in Egemen B.
@@ -80,8 +91,10 @@ Tuncarslan's repository, `egeboy35/constraint-gap-measurements` (private).
 That is where the CSI datasets, the attack tools and the `cos theta`
 experiments are; this repository holds only the formalization.
 
-The two are archived to Zenodo separately at submission, with version DOIs, so
-each is citable at the state the reported numbers came from.
+The two are archived on Zenodo separately: this formalization as
+[10.5281/zenodo.23902307](https://doi.org/10.5281/zenodo.23902307), the
+measurement suite as
+[10.5281/zenodo.23861447](https://doi.org/10.5281/zenodo.23861447).
 
 Worth recording here, because it bears on Theorems 1 and 6: the applied
 projection in the measurement suite is built by `tangent_basis`, which
